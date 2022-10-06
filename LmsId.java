@@ -30,13 +30,13 @@ public class LmsId {
 		//id.forEach(lms->System.out.println(lms));
 		
 		
-		int max=id.get(0);
+		int min=id.get(0);
 		for(int i=0;i<id.size();i++) {
-			if(max<id.get(i)) {
-				max=id.get(i);
+			if(min>id.get(i)) {
+				min=id.get(i);
 			}
 		}
-		System.out.println(max);
+		System.out.println(min);
 	}
 
 }
